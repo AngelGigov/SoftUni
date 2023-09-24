@@ -1,6 +1,5 @@
 #User Input
 number = int(input())
-
 is_prime = False
 
 if number > 1:
