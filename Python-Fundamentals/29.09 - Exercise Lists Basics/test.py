@@ -1,5 +1,4 @@
 cells = [40, 100]
 
-print("Cells:")
-for i in cells:
-    print(f" - {i}")
+cels = cells * 0.25
+print(cels)
