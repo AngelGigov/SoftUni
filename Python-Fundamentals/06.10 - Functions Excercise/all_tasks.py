@@ -11,7 +11,7 @@ smallest_element = smallest([first_number, second_number, third_number])
 print(smallest_element)
 
 
-# 2
+# 21
 def sum_numbers(first, second):
     return first + second
 
