@@ -31,13 +31,13 @@ while command[0] != 'Retire':
         start = int(command[1])
         end = int(command[2])
         damage = int(command[3])
-        if 0 <= start < len(pirate_ship_status) and 0 <= end < len(pirate_ship_status): #checking if both indexes are valid
+        if 0 <= start < len(pirate_ship_status) and start <= end < len(pirate_ship_status): #checking if both indexes are valid
             for el in range(start, end + 1):
                 pirate_ship_status[el] -= damage
                 if pirate_ship_status[el] <= 0:
                     print("You lost! The pirate ship has sunken.")
                     exit() #Quit as you lose
-    elif command[0] == 'Repair': # Repair Pirate ship
+    elif command[0] == 'Repair': # Repair Pirate ship - THERE IS NO CHECK IF THE INDEX IS VALID - NEED TO BE FIXED
         index = int(command[1])
         health = int(command[2])
         if pirate_ship_status[index] + health <= maximum_health_capacity:
