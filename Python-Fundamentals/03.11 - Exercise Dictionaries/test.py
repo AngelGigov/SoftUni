@@ -1,4 +1,7 @@
-x = "2"
-a = 'a'
+items = {"shards": 0, "fragments": 0, "motes": 0}
 
-print(x.isdigit())
+value = 3
+key = input()
+if key not in items.keys():
+    items[key] = 0
+items[key] += value
