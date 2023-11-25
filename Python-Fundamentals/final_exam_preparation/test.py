@@ -1,6 +1,4 @@
-string = "Hello"
-number = int(input())
+command = input().split("|")
+while command[0] != 'Stop':
 
-string = string[number:] + string[:number]
-
-print(string)
+    command = input()
