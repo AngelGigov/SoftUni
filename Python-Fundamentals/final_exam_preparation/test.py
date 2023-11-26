@@ -1,4 +1,7 @@
-command = input().split("|")
-while command[0] != 'Stop':
 
-    command = input()
+command = input().split(":")
+while command != 'Exhibition':
+    if command[0] == "Rate":
+        pass
+
+    command = input().split(":")
