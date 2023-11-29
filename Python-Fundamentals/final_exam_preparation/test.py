@@ -1,7 +1,4 @@
+password = "Password"
 
-command = input().split(":")
-while command != 'Exhibition':
-    if command[0] == "Rate":
-        pass
-
-    command = input().split(":")
+for index, letter  in enumerate(password):
+    print(index, letter)

@@ -35,9 +35,27 @@ while command[0] != 'End':
             print(f"{hero_name} has been killed by {attacker}!")
             heroes.pop(hero_name)
 
-    elif command[0] =="TakeDamage":
-        pass
+    elif command[0] =="Recharge":
+        hero_name = command[1]
+        amount = int(command[2])
+        if heroes[hero_name]["MP"] + amount > 200:
+            print(f"{hero_name} recharged for {200 - heroes[hero_name]['MP']} MP!")
+            heroes[hero_name]["MP"] = 200
+        else:
+            heroes[hero_name]["MP"] += amount
+            print(f"{hero_name} recharged for {amount} MP!")
+
     elif command[0] =="Heal":
-        pass
+        hero_name = command[1]
+        amount = int(command[2])
+        if heroes[hero_name]["HP"] + amount > 100:
+            print(f"{hero_name} healed for {100 - heroes[hero_name]['HP']} HP!")
+            heroes[hero_name]["HP"] = 100
+        else:
+            heroes[hero_name]["HP"] += amount
+            print(f"{hero_name} healed for {amount} HP!")
 
     command = input().split(" - ")
+
+for el in heroes.keys():
+    print(f"{el}\n  HP: {heroes[el]['HP']}\n  MP: {heroes[el]['MP']}")
