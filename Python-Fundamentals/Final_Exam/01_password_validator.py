@@ -30,6 +30,27 @@ while command[0] != "Complete":
         print(password)
 
     elif command[0] == "Validation":
-        pass
+        if len(password) < 8:
+            print("Password must be at lest 8 characters long!")
+        if not password.isalnum() and "_" in password:
+            print("Password must consist only of letters, digits and _!")
+        digits = 0
+        for i in password:
+            if i.isdigit():
+                digits += 1
+        if digits < 1:
+            print('Password must consist at least one digit!')
+        upper_case = 0
+        for i in password:
+            if i.isupper():
+                upper_case += 1
+        if upper_case < 1:
+            print('Password must consist at least one uppercase letter!')
+        lower_case = 0
+        for i in password:
+            if i.islower():
+                lower_case += 1
+        if lower_case < 1:
+            print('Password must consist at least one lowercase letter!')
 
     command = input().split()
