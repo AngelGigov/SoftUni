@@ -41,4 +41,16 @@
 # a = "ABC"
 # list_to_test = [str(i) for i in a]
 # print(list_to_test)
+# matrix = [input().split() for i in range(5)]
+#
+# print(matrix)
 
+def valid_coordinates(row, col):
+    if {row}.issubset(r) and {col}.issubset(r):
+        return True
+    else:
+        return False
+
+r = range(3)
+
+print(valid_coordinates(1, 3))
