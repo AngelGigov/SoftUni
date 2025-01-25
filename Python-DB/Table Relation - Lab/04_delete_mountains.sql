@@ -1,0 +1,14 @@
+CREATE TABLE mountains (
+	id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+	name VARCHAR(20)
+);
+
+CREATE TABLE peaks (
+	id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+	name VARCHAR(20),
+	mountain_id INT,
+	CONSTRAINT fk_mountain_id
+		FOREIGN KEY (mountain_id)
+			REFERENCES mountains(id)
+			ON DELETE CASCADE
+);
