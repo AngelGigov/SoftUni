@@ -2,5 +2,9 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/Python-DB/Built-in Functions - Exercise/10_ltrim_rtrim.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/Python-DB/Database Programmability and Transactions - Lab/01_count_employees_by_town.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/Python-DB/Database Programmability and Transactions - Lab/02_employees_promotion.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/Python-DB/Database Programmability and Transactions - Lab/03_employees_promotion_by_id.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/Python-DB/Database Programmability and Transactions - Lab/04_triggered.sql" dialect="PostgreSQL" />
   </component>
 </project>
